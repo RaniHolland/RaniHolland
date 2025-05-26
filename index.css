@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background-image: url('360_F_735810914_EDd20C4JuMClBBOKeB9pOQ5h8E8nmsiP.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#start-screen,
+#end-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(224, 247, 255, 0.7); /* שקיפות */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#game-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+button {
+  background-color: #66ccff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #4db8ff;
+}
+
+#score-timer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  background: rgba(129, 214, 253, 0.7);
+  padding: 5px 10px;
+  border-radius: 8px;
+  z-index: 10;
+  font-size: 30px;
+  color: #0b3450;
+}
+
+.creature {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.fish {
+  background-image: url('2a27bec4-b13c-4342-9abf-b83eb9753d1c_removalai_preview (1).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shark {
+  background-image: url('4b865dac-6d6e-4936-a4be-d3e057e4a407_removalai_preview.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bomb {
+  background-image: url('9b1e9585-a062-4308-9aeb-ef867b5f2085_removalai_preview.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dolphin {
+  background-image: url('70e1ccbd-777c-4737-9f66-679a8b4e333b_removalai_preview.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* מקרא */
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.legend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.creature-icon {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

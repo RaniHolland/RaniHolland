@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>משחק מתחת למים</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div id="start-screen">
+    <h1>משחק מתחת למים</h1>
+
+    <div id="legend-text">
+      <p>דג +1</p>
+      <p>דולפין +3</p>
+      <p>כריש -3</p>
+      <p>סרטן -1</p>
+    </div>
+
+    <button id="start-button">התחל לשחק</button>
+  </div>
+
+  <div id="game-container">
+    <div id="score-timer">
+      <span id="score">נקודות: 0</span>
+      <span id="timer">40</span>
+    </div>
+  </div>
+
+  <div id="end-screen">
+    <h2>המשחק נגמר!</h2>
+    <p id="final-score">צברת 0 נקודות</p>
+    <button id="restart-button">שחק מחדש</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
